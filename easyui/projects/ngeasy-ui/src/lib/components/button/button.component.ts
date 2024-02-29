@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { cBaseComponent } from '../../classes/cBaseComponent';
 
 @Component({
@@ -9,4 +9,6 @@ import { cBaseComponent } from '../../classes/cBaseComponent';
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss',
 })
-export class EuiButtonComponent extends cBaseComponent {}
+export class EuiButtonComponent extends cBaseComponent {
+  @Input() label: String = 'Button';
+}

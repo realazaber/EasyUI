@@ -6,7 +6,7 @@ import { eSizePick } from '../types/sizePick';
   template: '',
 })
 export class cBaseComponent {
-  @Input() bgColor?: eBgColorPick | null = null;
+  @Input() bgColor?: eBgColorPick | string | null = null;
   @Input() size?: eSizePick | null = null;
 
   getClasses(): string {
@@ -34,7 +34,9 @@ export class cBaseComponent {
         extraClasses += 'bg-blue-500 text-white ';
         break;
       default:
-        extraClasses += ' ';
+        extraClasses += ' bg-[';
+        extraClasses += this.bgColor;
+        extraClasses += '] ';
         break;
     }
     switch (this.size) {

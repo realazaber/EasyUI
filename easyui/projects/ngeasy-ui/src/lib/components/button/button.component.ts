@@ -10,5 +10,5 @@ import { cBaseComponent } from '../../classes/cBaseComponent';
   styleUrl: './button.component.scss',
 })
 export class EuiButtonComponent extends cBaseComponent {
-  @Input() label: String = '';
+  @Input() label: string = '';
 }

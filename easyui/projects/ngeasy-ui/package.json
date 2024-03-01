@@ -1,6 +1,9 @@
 {
   "name": "@azaber/ngeasy-ui",
   "version": "0.0.1",
+  "scripts": {
+    "upload": "npm publish --access public"
+  },
   "peerDependencies": {
     "@angular/common": "^17.2.0",
     "@angular/core": "^17.2.0",

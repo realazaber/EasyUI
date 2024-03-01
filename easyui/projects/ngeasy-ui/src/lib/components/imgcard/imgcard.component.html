@@ -1,0 +1,33 @@
+<div class="shadow-md rounded-md flex flex-col">
+  @if (url != '' && extUrl == '') {
+  <a routerLink="{{ url }}">
+    <img
+      class="w-full object-cover rounded-t-md"
+      src="{{ imgUrl }}"
+      alt="{{ imgAlt }}"
+  /></a>
+
+  } @else if (extUrl != '' && url == '') {
+  <a href="{{ extUrl }}" target="_blank">
+    <img
+      class="w-full object-cover rounded-t-md"
+      src="{{ imgUrl }}"
+      alt="{{ imgAlt }}"
+    />
+  </a>
+  } @else if (extUrl != '' && url != '') {
+  <span class="text-red-500 font-extrabold text-center p-3"
+    >ONLY 1 URL TYPE CAN BE USED</span
+  >
+  } @else {
+  <img
+    class="w-full object-cover rounded-t-md"
+    src="{{ imgUrl }}"
+    alt="{{ imgAlt }}"
+  />
+
+  }
+  <div class="p-3">
+    <ng-content></ng-content>
+  </div>
+</div>

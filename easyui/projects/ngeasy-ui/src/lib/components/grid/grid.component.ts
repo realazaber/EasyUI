@@ -9,25 +9,34 @@ import { Component, Input } from '@angular/core';
   styles: ``,
 })
 export class EuiGridComponent {
-  @Input() cols: number = 3;
-  @Input() smCols: number = 3;
-  @Input() mdCols: number = 3;
-  @Input() lgCols: number = 4;
+  @Input() cols: number = 1;
+  @Input() smCols: number | null = null;
+  @Input() mdCols: number | null = null;
+  @Input() lgCols: number | null = null;
+  @Input() xlCols: number | null = null;
   @Input() gap: number = 2;
 
   getGridClasses(): string {
-    return (
-      ' grid-cols-' +
-      this.cols +
-      ' sm:grid-cols-' +
-      this.smCols +
-      ' md:grid-cols-' +
-      this.mdCols +
-      ' lg:grid-cols-' +
-      this.lgCols +
-      ' gap-' +
-      this.gap +
-      ' '
-    );
+    let classes = ' grid-cols-' + this.cols;
+
+    if (this.smCols) {
+      classes += ' sm:grid-cols-' + this.smCols;
+    }
+
+    if (this.mdCols) {
+      classes += ' md:grid-cols-' + this.mdCols;
+    }
+
+    if (this.lgCols) {
+      classes += ' lg:grid-cols-' + this.lgCols;
+    }
+
+    if (this.xlCols) {
+      classes += ' xl:grid-cols-' + this.xlCols;
+    }
+
+    classes += ' gap-' + this.gap + ' ';
+
+    return classes;
   }
 }

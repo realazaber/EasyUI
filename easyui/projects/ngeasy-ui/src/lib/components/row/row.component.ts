@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { cAlignBase } from '../../classes/cAlignBase';
 
 @Component({
   selector: 'eui-row',
@@ -8,17 +9,4 @@ import { Component, Input } from '@angular/core';
   templateUrl: './row.component.html',
   styles: ``,
 })
-export class EuiRowComponent {
-  @Input() xgap: number = 2;
-  @Input() colStart: 'sm' | 'md' | 'lg' | null = null;
-
-  getRowClasses(): string {
-    let classes = '';
-    classes += 'gap-x-' + this.xgap + ' ';
-    if (this.colStart != null) {
-      classes += this.colStart + ':flex-col ';
-    }
-
-    return classes;
-  }
-}
+export class EuiRowComponent extends cAlignBase {}

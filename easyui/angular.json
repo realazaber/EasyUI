@@ -127,6 +127,37 @@
               "zone.js/testing"
             ]
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/ngeasy-ui/.storybook",
+            "browserTarget": "ngeasy-ui:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/ngeasy-ui"
+            ],
+
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/ngeasy-ui/.storybook",
+            "browserTarget": "ngeasy-ui:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/ngeasy-ui"
+            ],
+            "outputDir": "dist/storybook/ngeasy-ui"
+          }
         }
       }
     }

@@ -7,3 +7,4 @@ An all-inclusive UI library for popular JavaScript frameworks - Angular, React, 
 - Expandable
 - Ribbon
 - Toast
+- Dark mode

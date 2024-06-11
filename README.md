@@ -5,11 +5,14 @@ An all-inclusive UI library for popular JavaScript frameworks - Angular, React, 
 
 ## TODO
 - Accent Ribbon
-- Toast
+- Toast notifications
 - Dark mode button, toggle
 - Timeline
-- Meta
+- Meta SEO tags
 - Accordion
 - Shorten options for sizes and colors (eg Medium = M, Large = Lg)
 - Modal
 - Bar
+- Input field validator
+- Nav
+

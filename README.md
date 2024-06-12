@@ -10,7 +10,6 @@ An all-inclusive UI library for popular JavaScript frameworks - Angular, React, 
 - Timeline
 - Meta SEO tags
 - Accordion
-- Shorten options for sizes and colors (eg Medium = M, Large = Lg)
 - Modal
 - Bar
 - Input field validator

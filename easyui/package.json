@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build-lib": "ng build ngeasy-ui --configuration=production --watch",
     "storybook": "ng run ngeasy-ui:storybook",
     "sb": "ng run ngeasy-ui:storybook",
     "build": "ng build",

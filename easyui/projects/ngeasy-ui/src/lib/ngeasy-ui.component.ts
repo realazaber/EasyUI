@@ -7,4 +7,4 @@ import { Component } from '@angular/core';
   template: ``,
   styles: ``,
 })
-export class EasyUiMain {}
+export class EasyUi {}

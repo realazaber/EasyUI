@@ -14,4 +14,5 @@ An all-inclusive UI library for popular JavaScript frameworks - Angular, React, 
 - Bar
 - Input field validator
 - Nav
+- copy
 

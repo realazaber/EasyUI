@@ -7,6 +7,25 @@ export class cAlignBase {
   @Input() xgap: number = 2;
   @Input() ygap: number = 2;
 
+  @Input() justify:
+    | 'normal'
+    | 'start'
+    | 'between'
+    | 'center'
+    | 'around'
+    | 'evenly'
+    | 'stretch'
+    | 'end'
+    | null = 'normal';
+  @Input() items:
+    | 'normal'
+    | 'start'
+    | 'end'
+    | 'center'
+    | 'baseline'
+    | 'stretch'
+    | null = 'normal';
+
   @Input() rowStart: 'sm' | 'md' | 'lg' | null = null;
   @Input() colStart: 'sm' | 'md' | 'lg' | null = null;
 
@@ -42,6 +61,10 @@ export class cAlignBase {
     if (this.rowStart != null) {
       classes += this.rowStart + ':flex-row ';
     }
+
+    classes += 'justify-' + this.justify + ' ';
+
+    classes += 'items-' + this.items + ' ';
 
     return classes;
   }

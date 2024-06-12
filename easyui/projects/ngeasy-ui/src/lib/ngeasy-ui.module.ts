@@ -10,6 +10,7 @@ import { EuiImgcardComponent } from './components/imgcard/imgcard.component';
 import { EuiRowComponent } from './components/row/row.component';
 import { EuiColComponent } from './components/col/col.component';
 import { EuiGridComponent } from './components/grid/grid.component';
+import { EuiDarkModeComponent } from './components/darkmode/darkmode.component';
 @NgModule({
   declarations: [],
   imports: [
@@ -18,6 +19,7 @@ import { EuiGridComponent } from './components/grid/grid.component';
     EuiBadgeComponent,
     EuiCardComponent,
     EuiColComponent,
+    EuiDarkModeComponent,
     EuiRowComponent,
     EuiImgcardComponent,
     EuiLayoutModule,
@@ -31,6 +33,7 @@ import { EuiGridComponent } from './components/grid/grid.component';
     EuiBadgeComponent,
     EuiCardComponent,
     EuiColComponent,
+    EuiDarkModeComponent,
     EuiRowComponent,
     EuiImgcardComponent,
     EuiLayoutModule,

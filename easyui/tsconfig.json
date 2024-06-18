@@ -4,8 +4,8 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "paths": {
-      "easy-ui": [
-        "./dist/easy-ui"
+      "ngeasy-ui": [
+        "./dist/ngeasy-ui/",
       ]
     },
     "forceConsistentCasingInFileNames": true,

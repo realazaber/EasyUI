@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef } from '@angular/core';
+import { Component, ContentChild, ElementRef, Input } from '@angular/core';
 import { cLayoutBase } from '../../classes/cLayoutBase';
 import { CommonModule } from '@angular/common';
 
@@ -9,4 +9,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './container.component.html',
   styleUrl: './container.component.scss',
 })
-export class EuiContainerComponent extends cLayoutBase {}
+export class EuiContainerComponent extends cLayoutBase {
+  @Input() width: number = 80;
+}

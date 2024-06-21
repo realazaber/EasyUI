@@ -11,6 +11,9 @@ import { EuiRowComponent } from './components/row/row.component';
 import { EuiColComponent } from './components/col/col.component';
 import { EuiGridComponent } from './components/grid/grid.component';
 import { EuiDarkModeComponent } from './components/darkmode/darkmode.component';
+import { EuiCodeblock } from './components/codeblock/codeblock.component';
+import { EuiCopyComponent } from './components/copy/copy.component';
+import { EuiToastComponent } from './components/toast/toast.component';
 @NgModule({
   declarations: [],
   imports: [
@@ -18,6 +21,7 @@ import { EuiDarkModeComponent } from './components/darkmode/darkmode.component';
     EuiButtonComponent,
     EuiBadgeComponent,
     EuiCardComponent,
+    EuiCodeblock,
     EuiColComponent,
     EuiDarkModeComponent,
     EuiRowComponent,
@@ -26,12 +30,15 @@ import { EuiDarkModeComponent } from './components/darkmode/darkmode.component';
     EuiContainerComponent,
     EuiSectionComponent,
     EuiGridComponent,
+    EuiCopyComponent,
+    EuiToastComponent,
   ],
   exports: [
     CommonModule,
     EuiButtonComponent,
     EuiBadgeComponent,
     EuiCardComponent,
+    EuiCodeblock,
     EuiColComponent,
     EuiDarkModeComponent,
     EuiRowComponent,
@@ -40,6 +47,8 @@ import { EuiDarkModeComponent } from './components/darkmode/darkmode.component';
     EuiContainerComponent,
     EuiSectionComponent,
     EuiGridComponent,
+    EuiCopyComponent,
+    EuiToastComponent,
   ],
 })
 export class EasyUIModule {}

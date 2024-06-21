@@ -1,3 +1,7 @@
-<button (click)="toggleMode()" [ngClass]="getClasses()">
+<button
+  (click)="toggleMode()"
+  [ngClass]="getClasses()"
+  class="eui-darkmode w-fit"
+>
   {{ getLabel() }}
 </button>

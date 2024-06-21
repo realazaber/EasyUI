@@ -3,8 +3,76 @@
 @tailwind components;
 @tailwind utilities;
 
+$dark-bg: #131414;
+
 @layer components {
+  * {
+    @apply scroll-smooth selection:bg-secondary selection:text-white scrollbar-thin scrollbar-thumb-primary dark:scrollbar-track-slate-900 scrollbar-track-slate-300;
+  }
   body {
-    @apply duration-200;
+    @apply duration-200 bg-slate-50 dark:bg-darkbg;
+
+    nav {
+      @apply bg-white dark:bg-darkbg z-50;
+    }
+
+    footer {
+      @apply bg-slate-50 dark:bg-darkbg;
+    }
+
+    h2 {
+      @apply text-3xl font-semibold mb-3 text-primary;
+    }
+
+    h3 {
+      @apply text-2xl font-semibold text-secondary;
+    }
+
+    h4 {
+      @apply text-xl font-medium text-secondary text-nowrap;
+    }
+
+    p,
+    a,
+    h1,
+    h5,
+    h6,
+    td,
+    th,
+    span {
+      @apply text-accent dark:text-slate-400;
+    }
+
+    #child-routes {
+      p,
+      code {
+        @apply text-lg;
+      }
+      p {
+        @apply font-semibold text-accent dark:text-slate-400;
+      }
+      img,
+      code {
+        @apply rounded-md;
+      }
+
+      code {
+        @apply sm:my-[-1rem];
+      }
+      a {
+        @apply text-primary underline;
+      }
+      li {
+        @apply list-decimal;
+      }
+
+      table {
+      }
+
+      td,
+      th {
+        @apply border-b-2 border-slate-500 border-opacity-45 p-3 w-1/2;
+      }
+    }
   }
 }

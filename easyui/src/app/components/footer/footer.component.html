@@ -1,0 +1,17 @@
+<footer class="mt-auto w-full h-[20vh]">
+  <eui-col class="mx-auto text-center">
+    <eui-row class="px-3">
+      <app-logo></app-logo>
+      <eui-col class="ml-auto">
+        @for (route of routes; track $index) {
+        <a routerLink="{{ route.path }}" class="text-right">{{
+          route.title
+        }}</a>
+        }
+      </eui-col>
+    </eui-row>
+    <a href="https://azaber.com/" target="_blank"
+      >Made by {{ currentYear }} Azaber</a
+    >
+  </eui-col>
+</footer>

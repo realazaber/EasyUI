@@ -16,7 +16,11 @@ export * from './lib/components/row/row.component';
 export * from './lib/components/col/col.component';
 export * from './lib/components/grid/grid.component';
 export * from './lib/components/darkmode/darkmode.component';
+export * from './lib/components/codeblock/codeblock.component';
+export * from './lib/components/copy/copy.component';
+export * from './lib/components/toast/toast.component';
 
+export { IPostion } from './lib/types/position';
 export { eBgColorPick } from './lib/types/colorPick';
 export { eSizePick } from './lib/types/sizePick';
 export { eDirection } from './lib/types/directionPick.enum';

@@ -40,7 +40,7 @@ $dark-bg: #131414;
     td,
     th,
     span {
-      @apply text-accent dark:text-slate-400;
+      @apply text-accent dark:text-slate-400 text-nowrap;
     }
 
     #child-routes {

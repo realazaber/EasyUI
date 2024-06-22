@@ -1,0 +1,66 @@
+<h2>Install</h2>
+
+<p>Easy UI is based on top of tailwind. To install it you will need to.</p>
+
+<h3>First install tailwind css into your project</h3>
+<eui-codeblock
+  toastLabel="Copied"
+  toastBg="Success"
+  [codeForHighlight]="codes[0]"
+  language="bash"
+></eui-codeblock>
+<eui-codeblock
+  toastLabel="Copied"
+  toastBg="Success"
+  [codeForHighlight]="codes[1]"
+  language="bash"
+></eui-codeblock>
+
+<p>
+  Make sure the tailwind config file is at the same level as your src folder.
+</p>
+<img
+  src="/assets/images/docs/install/tw-config-location.webp"
+  alt="Tailwind config file location"
+/>
+
+<app-seperator></app-seperator>
+<h3>Setup</h3>
+<p>Set up your tailwind config with your theme colors.</p>
+<eui-codeblock
+  toastLabel="Copied"
+  toastBg="Success"
+  [codeForHighlight]="codes[2]"
+  language="js"
+></eui-codeblock>
+<p>
+  You can find official tailwind guide
+  <a href="https://tailwindcss.com/docs/guides/angular" target="_blank">here</a>
+</p>
+<app-seperator></app-seperator>
+
+<h3>You will then need to add Easy UI to your project.</h3>
+<eui-codeblock
+  toastLabel="Copied"
+  toastBg="Success"
+  [codeForHighlight]="codes[4]"
+  language="bash"
+></eui-codeblock>
+<p class="mt-3">
+  Then import the EasyUIModule to your components where itll be used.
+</p>
+<eui-codeblock
+  toastLabel="Copied"
+  toastBg="Success"
+  [codeForHighlight]="codes[5]"
+  language="ts"
+></eui-codeblock>
+
+<p class="my-3">
+  Now whenever you start a < you will most likely (depending if you have
+  intellisense) see the wide array of components to choose from!
+</p>
+<img
+  src="/assets/images/docs/install/suggestions.webp"
+  alt="Component Suggestions"
+/>

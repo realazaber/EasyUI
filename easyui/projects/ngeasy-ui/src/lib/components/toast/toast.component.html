@@ -1,0 +1,9 @@
+@if (isActive) {
+<div
+  [ngClass]="classes"
+  class="eui-toast text-center rounded-sm fixed p-3 z-50 hover:cursor-pointer"
+>
+  {{ label }}
+  <ng-content />
+</div>
+}

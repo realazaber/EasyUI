@@ -1,19 +1,43 @@
 import { Routes } from '@angular/router';
-import { TestComponent } from './pages/test/test.component';
-import { HomeComponent } from './pages/home/home.component';
+import { HomePage } from './pages/home/home.component';
+import { ContactPage } from './pages/contact/contact.component';
+import { DocsPage } from './pages/docs/docs.component';
+
+import { componentRoutes } from './modules/docs-pages/component-pages';
+import { miscRoutes } from './modules/docs-pages/misc-pages';
+import { moduleRoutes } from './modules/docs-pages/module-pages';
+
+let docRoutes: Routes = [];
+
+miscRoutes.forEach((route: any) => {
+  docRoutes.push(route);
+});
+
+moduleRoutes.forEach((route: any) => {
+  docRoutes.push(route);
+});
+
+componentRoutes.forEach((route: any) => {
+  docRoutes.push(route);
+});
 
 export const routes: Routes = [
   {
-    title: 'home',
-    component: HomeComponent,
+    title: 'Easy UI',
+    component: HomePage,
     pathMatch: 'full',
     path: '',
   },
-
   {
-    title: 'test',
-    component: TestComponent,
+    title: 'Docs',
+    path: 'docs',
+    component: DocsPage,
+    children: docRoutes,
+  },
+  {
+    title: 'Contact',
+    component: ContactPage,
     pathMatch: 'full',
-    path: 'test',
+    path: 'contact',
   },
 ];
